@@ -19,8 +19,8 @@ Fecha::Fecha(int dd, int mm, int aaaa)
 		exit(1);
 	}
 
-	if((anio < 0) || (mes > 2018)) {
-		cout << "Valor ilegal para el mes!\n";
+	if((anio < 0) || (anio > 2018)) {
+		cout << "Valor ilegal para el anio!\n";
 		exit(1);
 	}
 
@@ -54,3 +54,4 @@ bool Fecha::leapyr(int a)
 
 	return false;
 }
+
